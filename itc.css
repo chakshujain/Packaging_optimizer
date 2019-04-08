@@ -1,0 +1,79 @@
+body{
+  font-family: 'Lobster', cursive;
+}
+
+.controller{
+  margin: 20px 0px;
+  display: block;
+    width: 82%;
+    height: 62px;
+}
+.query{
+  max-width: 40%;
+  float: right;
+  margin-top: 40px;
+  margin-bottom:160px;
+  margin-right: 20px;
+  height: 600px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
+  padding: 20px;
+  border-radius: 30px;
+  text-decoration-color: black;
+
+}
+.white{
+  color: white;
+}
+.grey{
+  color:#adff2f;
+
+}
+.grey-border{
+  border:2px solid #adff2f;
+}
+.add{
+  display: inline-block;
+  max-width: 30%;
+  margin-right: 12px;
+}
+.jump{
+  z-index: 1;
+    position: absolute;
+    top: 1480px;
+    left: 45%;
+    margin-bottom: 20px;
+}
+.set{
+  width: 100%;
+  height: 650px;
+  margin-top: 0px;
+  background: url(package.jpg) no-repeat top center fixed ;
+  background-size: cover;
+}
+.Simulate{
+  border:4px solid #adff2f;
+}
+.button-container{
+    width: 5%;
+    height: 400px;
+    position: absolute;
+    top: 850px;
+    color: #dae0e5;
+    left: 1295px;
+    background: black;
+    border-radius: 10px;
+}
+
+.StopRotate{
+  border-radius:5px;
+  background:red;
+}
+.openRotate{
+  border-radius:5px;
+  background: green;
+}
+.packimage{
+  border-radius:5px;
+  background: yellow;
+}

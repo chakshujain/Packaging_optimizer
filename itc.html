@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="itc.css"/>
+</head>
+<body>
+
+  <div class="container query">
+
+<div class="form-group">
+  <h2 class = "white">What Kind Of Items Do You Have?</h2>
+
+  <select class="form-control items grey-border" name="SHAPES" value = "SHAPES">
+      <option  hidden>Material</option>
+      <option value="Less Damagable" class =  "form-control">Less Damagable</option>
+      <option value="Fragile" class = " form-control">Fragile</option>
+      <option value="Super Fragile" class = "form-control">Super Fragile</option>
+
+
+  </select>
+</div>
+    <div class="TYPE form-group">
+          <h2 class = "grey">Select Your Packaging Shape</h2>
+
+      <select class="form-control shapes" name="SHAPES" value = "SHAPES">
+          <option  hidden>TYPE</option>
+          <option value="CUBE" class = "cube form-control">CUBE</option>
+          <option value="CUBOID" class =  "cuboid form-control">CUBOID</option>
+          <option value="CYLINDER" class = "cylinder form-control">CYLINDER</option>
+
+
+      </select>
+    </div>
+
+    <div class="dimensions">
+
+    </div>
+
+    <div class="container MassSection form-group">
+      <h4 class = "white ">Mass Of Unit(In Kg)</h4>
+      <input type="text Mass" class = "form-control mass grey-border"placeholder="">
+    </div>
+
+     <div class="container UnitsSection form-group">
+       <h4 class = "grey">Units per box.</h4>
+
+      <input type="text Units" class = "form-control  Units" value="" placeholder="">
+     </div>
+
+
+    <div class="container Material form-group">
+      <h4 class = "white">Strength(In grams/cm)</h4>
+      <input type="text"class = "form-control strength grey-border" placeholder="">
+    </div>
+
+    <button type="submit" class = "btn btn-default Simulate"name="simulate"><b>Simulate</b></button>
+</div>
+<div class="set">
+
+</div>
+<button class = "btn btn-default jump" type="submit" name="">Jump to Forces</button>
+<div class="button-container">
+
+  <button type="submit" name="button" class = "StopRotate controller"></button>
+  <button type="submit" name="button" class = "openRotate controller"></button>
+  <button type = "submit" class = "packimage controller"></button>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src = "three.js"></script>
+<script type="text/javascript" src = "main_algorithm.js"></script>
+ <script type="text/javascript" src = "Design.js"></script>
+  <script src = "itc.js"></script>
+
+  <script src="cannon.js"></script>
+ <script src="cannon.demo.js"></script>
+ <script src="dat.gui.js"></script>
+<script src="TrackballControls.js"></script>
+<script src="Stats.js"></script>
+<script src="smoothie.js"></script>
+<script src="Detector.js"></script>
+<script src = "droping_box.js"></script>
+</body>
+
+
+
+</html>
